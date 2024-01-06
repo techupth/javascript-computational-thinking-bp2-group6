@@ -82,3 +82,11 @@ let orders = [
 ];
 
 // Start coding here
+let totalAmount = 0
+for (let i = 0; i < orders.length; i++) {
+  let price = orders[i].productPrice
+  let quantity = orders[i].productQuantity
+  let total = price * quantity
+  totalAmount += total
+}
+console.log(`Total amount of the orders: ${totalAmount}`)

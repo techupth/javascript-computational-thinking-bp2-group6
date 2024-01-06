@@ -82,3 +82,15 @@ let orders = [
 ];
 
 // Start coding here
+let mostExpen = 0
+let mostId =''
+
+for (let order of orders) {
+  let mostValue = order.productPrice * order.productQuantity
+  
+  if (mostValue > mostExpen) {
+    mostExpen = mostValue
+    mostId = order.id
+  }
+}
+console.log(`The most expensive order is order ${mostId} (${mostExpen}) baht`)
