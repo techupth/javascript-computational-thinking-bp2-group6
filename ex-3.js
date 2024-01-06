@@ -82,3 +82,14 @@ let orders = [
 ];
 
 // Start coding here
+
+let bsTotal3 = 0
+for (let order of orders){
+
+if (order.customerName === "Birdie Shepland") {
+  let price = order.productPrice
+  let quantity = order.productQuantity
+  let total = price * quantity
+  bsTotal3 += total}
+}
+console.log(`Total paid amount of Birdie Shepland: ${bsTotal3} Baht`)
